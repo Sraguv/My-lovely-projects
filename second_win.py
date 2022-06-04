@@ -34,7 +34,7 @@ class TestWin(QWidget):
         self.text_test2 = QLabel(txt_test2)
         self.text_test3 = QLabel(txt_test3)
         self.text_timer = QLabel(txt_timer)
-        self.text_timer.setFont("Times", 36, QFont.Bold)
+        self.text_timer.setFont(QFont("Times", 36, QFont.Bold))
 
         self.line_name = QLineEdit(txt_hintname)
         self.line_age = QLineEdit(txt_hintage)
@@ -44,6 +44,7 @@ class TestWin(QWidget):
         self.h_line = QHBoxLayout()
         self.r_line = QVBoxLayout()
         self.l_line = QVBoxLayout()
+        
         self.r_line.addWidget(self.text_timer, alignment = Qt.AlignCenter)
         self.l_line.addWidget(self.text_name, alignment = Qt.AlignLeft)
         self.l_line.addWidget(self.line_name, alignment = Qt.AlignLeft)
