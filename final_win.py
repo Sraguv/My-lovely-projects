@@ -1,8 +1,6 @@
-from unittest import result
 from instr import *
-from PyQt5.QtCore import Qt, QTime, QTimer
-from PyQt5.QtGui import QFont
-from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QLabel, QVBoxLayout, QHBoxLayout, QLineEdit
+from PyQt5.QtCore import Qt
+from PyQt5.QtWidgets import QWidget, QLabel, QVBoxLayout
 class FinalWin(QWidget):
 
     def __init__(self, exp):
@@ -20,7 +18,7 @@ class FinalWin(QWidget):
     def results(self):
         if self.exp.age < 7:
             self.index = 0
-            return "Извените, но подобного возраста мы посчитать не можем."
+            return "Извините, но подобного возраста мы посчитать не можем."
         self.index = (4 * (int(self.exp.t1) + int(self.exp.t2) + int(self.exp.t3))-200) / 10
         if self.exp.age == 7 or self.exp.age == 8:
             if self.index >= 21:

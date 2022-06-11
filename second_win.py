@@ -2,7 +2,7 @@ from instr import *
 from final_win import *
 from PyQt5.QtCore import Qt, QTime, QTimer
 from PyQt5.QtGui import QFont
-from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QLabel, QVBoxLayout, QHBoxLayout, QLineEdit
+from PyQt5.QtWidgets import QWidget, QPushButton, QLabel, QVBoxLayout, QHBoxLayout, QLineEdit
 
 class Experiment():
     def __init__(self, age, test1, test2, test3):
@@ -142,4 +142,3 @@ class TestWin(QWidget):
                 return txt_res1
         elif self.index < 15 and self.index >= 11:
             return txt_res2
-
