@@ -142,3 +142,4 @@ class TestWin(QWidget):
                 return txt_res1
         elif self.index < 15 and self.index >= 11:
             return txt_res2
+            
